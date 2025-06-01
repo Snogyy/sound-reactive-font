@@ -23,6 +23,7 @@ body {
   position: relative;
 }
 
+
 #app {
   flex: 1;
   display: flex;
@@ -32,48 +33,12 @@ body {
   font-size: 4rem;
 }
 
-#app input {
-  position: absolute;
-  width: auto;
-  height: auto;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: inherit;
-  font-family: inherit;
-  color: transparent;
-  background: transparent;
-  border: none;
-  outline: none;
-  caret-color: white;
-  text-align: center;
-  /* z-index: 2; */
+
+.refresh-button {
+  position: fixed;
+  width: 3%;
 }
 
-#app h1 {
-  z-index: 1;
-  pointer-events: none;
-}
-
-.range-bars {
-  position: absolute;
-  margin: 2rem 0 0 2rem;
-  display: flex;
-  flex-direction: row;
-}
-
-.range-bars div {
-  width: 14rem;
-  height: 3rem;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin: 0 2rem 0 2rem;
-  font-size: 1.5rem;
-}
-
-.range-bars label {
-  margin: 1rem;
-}
 
 .end-of-page {
   position: absolute;
@@ -81,24 +46,46 @@ body {
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  bottom: 30px;
+  bottom: 15px;
 }
 
 .end-of-page a {
-  display: flex;
+  position: relative;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 14rem;
-  height: 3rem;
-  background-image: url("assets/images/button.png");
-  background-size: 100% 100%;
-  padding: 1rem 2rem;
-  color: rgb(238, 238, 238);
-  font-weight: bold;
-  font-size: 2rem;
+  width: 18%;
+  height: auto;
+  padding: 0;
+  margin: 0 2rem 0 2rem;
   text-decoration: none;
-  text-align: center;
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.9);
-  margin: 0 3rem 0 3rem;
+  border: none;
+}
+
+.end-of-page img {
+  width: 100%;
+  height: 100%;
+}
+
+.end-of-page span {
+  position: absolute;
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: bold;
+  font-size: 2.3rem;
+  pointer-events: none;
+  user-select: none;
+}
+
+
+.footer-text {
+  position: fixed;
+  left: 86%;
+  bottom: 0;
+  text-decoration: none;
+  color: rgb(238, 238, 238);
+  font-family:'Courier New', Courier, monospace;
+  font-style: italic;
+  font-weight: 0;
+  font-size: 0.85rem;
 }

@@ -1,0 +1,74 @@
+.range-bars {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.range-bars div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  margin: 3rem 1rem 0 0;
+}
+
+.refresh-button {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.range-bars div {
+  width: 25rem;
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 2rem 0 2rem;
+  font-size: 1.5rem;
+}
+
+.range-bars label {
+  margin: 1rem;
+  font-weight: bold;
+}
+
+.range-bars input {
+  background-color: transparent;
+  margin-top: 3rem;
+  width: 25rem;
+  height: 10rem;
+}
+
+#color::-webkit-slider-runnable-track,
+#color::-moz-range-track,
+#color::-ms-fill-lower,
+#color::-ms-fill-upper {
+  height: 10rem;
+  background: url('assets/images/color-range-bar.svg') center/200% 100% no-repeat;
+  background-size: contain;
+  border-radius: 0.6rem;
+}
+
+input[type="range"]::-webkit-slider-runnable-track,
+input[type="range"]::-moz-range-track,
+input[type="range"]::-ms-fill-lower,
+input[type="range"]::-ms-fill-upper {
+  height: 10rem;
+  background: url('assets/images/range-bar.svg') center/200% 100% no-repeat;
+  background-size: contain;
+  border-radius: 0.6rem;
+}
+
+input[type="range"]::-webkit-slider-thumb,
+input[type="range"]::-moz-range-thumb,
+input[type="range"]::-ms-thumb {
+  height: 2.5rem;
+  width: 2.5rem;
+  border: none;
+  background: url('assets/images/cursor.svg') center/800% 800% no-repeat;
+}

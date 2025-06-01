@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 447.11 118.7">
+  <!-- Generator: Adobe Illustrator 29.5.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 141)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: none;
+      }
+
+      .st1 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <polygon class="st0" points="428.8 51.82 10.69 51.82 10.69 58.91 17.78 66 435.89 66 435.89 58.91 428.8 51.82"/>
+    </clipPath>
+  </defs>
+  <g class="st1">
+    <image width="338" height="82" transform="translate(-10.4 2.63) scale(1.39)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVQAAABTCAYAAADA4P+5AAAACXBIWXMAAAf/AAAH/wFdbWgRAAAD0klEQVR4nO3ZPWsVeRjG4Ttujmy2NGIVttBoY3ES0sSPYKNgrZ9ALLaKnQgWsRQ5jZ0o5AsIdloKgoWwpJC8NClEjMUW6+JxdQujq3k/yWNmlOuC4YSZf5iHmfDjZGZoZmbmYwDYs9nZ2QwNDQ0danoQgJ+FoAIUEVSAIoIKUERQAYoIKkARQQUoIqgARQQVoIigAhQRVIAiw00PAPzv9evXSZKVlZVt1x09ejRjY2MHMRIDEFRokYWFhSTJ6dOnMzExsemaly9fZm5uTlBbSFChRaamppIkjx8/Tq/X23TNhQsXMj09fZBjsUueoUKLdDqddDqdHD9+PLdv395w/OHDh3nz5k2OHTvWwHTsRFABiggqtND4+Hju3buX1dXVb/Zfu3Yt3W63oanYiaBCS506dSo3btxIkvR6vfR6vYyOjmZkZKThydiKl1LQUmNjY3n69GmePHny5QXVuXPnGp6K7QgqtNiJEydy8eLFTE5ONj0Ku7CvoM7evPnph8ObbNvt7wy4fjfHt9q//lxbrV879rGTvMu3W7Jx39f7+wOuH+TYfs7xPocGvFjrL9hu1g96Q/Z4jn9/GfwC9wdcv5ebuIdzDH8Y7Or+nuSvpU/7/9zF+kHvxtd3ZZD1n/cPbfjr3O4i9ge7WPu6UZvNtfX6qzN/ZL88QwUoIqgARQQVoIigAhQRVIAiggpQRFABiggqQBFBBSgiqABFBBWgiKACFBFUgCKCClBEUAGKCCpAEUEFKCKoAEUEFaCIoAIUEVSAIoIKUERQAYoIKkARQQUoIqgARQQVoIigAhQRVIAiggpQRFABiggqQBFBBSgiqABFBBWgiKACFBnezy9fnZmpmmN779Z9/iQOJfl1bfsxfUjyz9r2Exn+6vO3JgfZm/dr299ND/JdHF7b2sk3VIAi+/qGCnxfq6urefToUSYnJ5Mk4+PjDU/EdnxDhRZbXFzM/fv3Mz8/n/n5+abHYQe+oUJLrayspNvt5syZM7l8+XKS5MGDB+l2uw1PxlYEFVrqxYsXuXXrVpJ8Cerdu3fz9u3bjIyMNDkaW/AvP7TQwsJCLl26lNHR0W/2X79+Pc+fP29oKnYiqNAi/X4//X4/S0tLuXLlyobjZ8+ezZEjR/Lq1asGpmMnggpQxDNUaJFnz54lSaanp3Pnzp1N10xMTGRubi7nz58/yNHYBUGFFjl58mSSZHl5OcvLy1uum5qaOqiRGICgQot8fgm1/mUUPwbPUAGKCCpAEUEFKCKoAEUEFaCIoAIUEVSAIoIKUERQAYoIKkARQQUoIqgAALTLf8cyDwoNtpRRAAAAAElFTkSuQmCC"/>
+  </g>
+</svg>

@@ -1,7 +1,9 @@
 import "../styles.css";
 
+const refrestInput = document.getElementById("refresh");
 let sensitivityInput = document.getElementById("sensibility");
 let currentMinDecibels = -58;
+let analyser;
 
 const el = document.querySelector("#app h1");
 
@@ -45,8 +47,8 @@ function initVisualizer() {
       // Set up a Web Audio AudioContext and AnalyzerNode, configured to return the
       // same number of bins of audio frequency data.
       var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      analyser = audioCtx.createAnalyser();
 
-      var analyser = audioCtx.createAnalyser();
       analyser.minDecibels = currentMinDecibels;
       analyser.maxDecibels = -10;
       analyser.smoothingTimeConstant = 0.5;
@@ -65,6 +67,7 @@ function initVisualizer() {
 
         currentMinDecibels = map(val, 0, 100, -40, -120);
         analyser.minDecibels = currentMinDecibels;
+        localStorage.setItem("minDecibels", currentMinDecibels);
       });
 
       function setFontFeatures(avg) {
@@ -113,3 +116,20 @@ function map(value, min1, max1, min2, max2) {
   var returnvalue = ((value - min1) / (max1 - min1)) * (max2 - min2) + min2;
   return returnvalue;
 }
+
+
+refrestInput.addEventListener("click", () => {
+    currentMinDecibels = -58;
+    sensitivityInput.value = 50;
+    if (analyser) {
+        analyser.minDecibels = currentMinDecibels;
+    }
+    localStorage.removeItem("minDecibels");
+});
+
+window.addEventListener("DOMContentLoaded", () => {
+    const saved = localStorage.getItem("minDecibels");
+    if (saved !== null) {
+        currentMinDecibels = saved;
+    }
+});
