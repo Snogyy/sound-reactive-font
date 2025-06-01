@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "FontBG";
+  src: url("assets/fonts/fontBG.ttf");
+}
+
+:root {
+  --wdth: 100;
+  --wght: 10;
+}
+
+body {
+  cursor: default;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: rgb(238, 238, 238);
+  overflow: hidden;
+  font-family: "FontBG";
+  font-variation-settings: "wdth" var(--wdth), "wght" var(--wght);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+#app {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 4rem;
+}
+
+#app input {
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: inherit;
+  font-family: inherit;
+  color: transparent;
+  background: transparent;
+  border: none;
+  outline: none;
+  caret-color: white;
+  text-align: center;
+  /* z-index: 2; */
+}
+
+#app h1 {
+  z-index: 1;
+  pointer-events: none;
+}
+
+.range-bars {
+  position: absolute;
+  margin: 2rem 0 0 2rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.range-bars div {
+  width: 14rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 2rem 0 2rem;
+  font-size: 1.5rem;
+}
+
+.range-bars label {
+  margin: 1rem;
+}
+
+.end-of-page {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  bottom: 30px;
+}
+
+.end-of-page a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 14rem;
+  height: 3rem;
+  background-image: url("assets/images/button.png");
+  background-size: 100% 100%;
+  padding: 1rem 2rem;
+  color: rgb(238, 238, 238);
+  font-weight: bold;
+  font-size: 2rem;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.9);
+  margin: 0 3rem 0 3rem;
+}

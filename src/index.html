@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="range-bars">
+        <div>
+            <input type="range" id="size" min="1" max="8" value="3.5" step="0.1"/>
+            <label for="size">Size</label>
+        </div>
+        <div>
+            <input type="range" id="sensibility" min="0" max="100" value="50"/>
+            <label for="sensibility">Sensibility</label>
+        </div>
+    </div>
+
+
+    <div id="app">
+        <input type="text" id="app-text"/>
+        <h1></h1>
+    </div>
+
+    <div class="end-of-page">
+        <a href="https://www.instagram.com/cmdmaj.v/" target="_blank">@cmdmaj.v</a>
+        <a>Download</a>
+    </div>
+
+    <script type="module"  src="./scripts/animated-text.js"></script>
+    <script src="./scripts/input-text.js"></script>
+    <script src="./scripts/size-input.js"></script>
+</body>
+</html>

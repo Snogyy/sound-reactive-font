@@ -1,0 +1,104 @@
+@font-face {
+  font-family: FontBG;
+  src: url("fontBG.57cd138e.ttf");
+}
+
+:root {
+  --wdth: 100;
+  --wght: 10;
+}
+
+body {
+  cursor: default;
+  color: #eee;
+  font-variation-settings: "wdth" var(--wdth), "wght" var(--wght);
+  background-color: #000000e6;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: FontBG;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+#app {
+  text-align: center;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  display: flex;
+}
+
+#app input {
+  width: auto;
+  height: auto;
+  font-size: inherit;
+  color: #0000;
+  caret-color: #fff;
+  text-align: center;
+  background: none;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#app h1 {
+  z-index: 1;
+  pointer-events: none;
+}
+
+.range-bars {
+  flex-direction: row;
+  margin: 2rem 0 0 2rem;
+  display: flex;
+  position: absolute;
+}
+
+.range-bars div {
+  text-align: center;
+  flex-direction: column;
+  width: 14rem;
+  height: 3rem;
+  margin: 0 2rem;
+  font-size: 1.5rem;
+  display: flex;
+}
+
+.range-bars label {
+  margin: 1rem;
+}
+
+.end-of-page {
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  bottom: 30px;
+}
+
+.end-of-page a {
+  color: #eee;
+  text-align: center;
+  cursor: pointer;
+  background-color: #000000e6;
+  background-image: url("button.9c96a10f.png");
+  background-size: 100% 100%;
+  justify-content: center;
+  align-items: center;
+  width: 14rem;
+  height: 3rem;
+  margin: 0 3rem;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+}
+/*# sourceMappingURL=memoire-victor.4d663569.css.map */
