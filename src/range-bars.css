@@ -67,8 +67,8 @@ input[type="range"]::-ms-fill-upper {
 input[type="range"]::-webkit-slider-thumb,
 input[type="range"]::-moz-range-thumb,
 input[type="range"]::-ms-thumb {
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 2rem;
+  width: 2rem;
   border: none;
-  background: url('assets/images/cursor.svg') center/800% 800% no-repeat;
+  background: url('assets/images/cursor.svg') center/100% 100% no-repeat;
 }
