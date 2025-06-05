@@ -1,62 +1,31 @@
-const el = document.querySelector("#app h1");
-const userInput = document.getElementById("app-text");
-let strArray;
+const textArea = document.getElementById("app-text");
 
-function syncInputToH1() {
-    const h1Rect = el.getBoundingClientRect();
-    const appRect = el.parentElement.getBoundingClientRect();
-
-    userInput.style.width = h1Rect.width + "px";
-    userInput.style.height = h1Rect.height + "px";
-    userInput.style.left = (h1Rect.left - appRect.left) + "px";
-    userInput.style.top = (h1Rect.top - appRect.top) + "px";
-    userInput.style.fontSize = window.getComputedStyle(el).fontSize;
-    userInput.style.fontFamily = window.getComputedStyle(el).fontFamily;
-    userInput.style.letterSpacing = window.getComputedStyle(el).letterSpacing;
-    userInput.style.textAlign = window.getComputedStyle(el).textAlign;
-    userInput.style.position = "absolute";
-    userInput.style.background = "transparent";
-    userInput.style.color = "transparent";
-    userInput.style.caretColor = "white";
-    userInput.style.border = "none";
-    userInput.style.outline = "none";
-    userInput.style.padding = "0";
-    userInput.style.margin = "0";
-    userInput.style.zIndex = 2;
+function updateTextAreaRows() {
+    textArea.style.height = "auto";
+    textArea.style.height = textArea.scrollHeight + "px";
 }
 
-function initElements() {
-    el.innerHTML = "";
-    for (let i = 0; i < strArray.length; i++) {
-        const letter = strArray[i];
-        const phraseAtom = document.createElement("span");
-        phraseAtom.innerText = letter;
-        el.appendChild(phraseAtom);
-    }
-}
-
-function updateText(text) {
-    if (!text || text.trim() === "") {
-        text = "SAY SOMETHING";
-    }
-    strArray = text.split("");
-    initElements();
-    syncInputToH1();
-}
-
-
-el.addEventListener("click", () => {
-    userInput.focus();
+textArea.addEventListener("input", () => {
+  updateTextAreaRows();
 });
 
-userInput.addEventListener("input", () => {
-    const text = userInput.value;
-    updateText(text);
+// LET THE FOCUS STAY ON THE INPUT ALL THE TIME
+// textArea.addEventListener("blur", () => {
+//   setTimeout(() => textArea.focus(), 1000);
+// });
+
+
+textArea.addEventListener("input", () => {
+    textArea.value = textArea.value.replace("SAY SOMETHING", "");
+    // WRITE THE PLACEHOLDER AUTOMATICALLY IF THE INPUT IS EMPTY
+    // if (textArea.value.trim() === "") {
+    //     textArea.value = "SAY SOMETHING";
+    // }
+    updateTextAreaRows();
 });
 
 window.addEventListener("load", () => {
-    userInput.value = "";
-    updateText(userInput.value);
-    userInput.focus();
-    userInput.setSelectionRange(userInput.value.length, userInput.value.length);
+    textArea.value = "SAY SOMETHING";
+    updateTextAreaRows();
+    textArea.focus();
 });

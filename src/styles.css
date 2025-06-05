@@ -33,6 +33,19 @@ body {
   font-size: 4rem;
 }
 
+#app-text {
+  all: unset;
+  font-size: 2em;
+  width: 90%;
+  max-height: 45rem;
+  height: auto;
+  white-space: normal;
+  word-break: break-word;
+  resize: none;
+  overflow: hidden;
+  text-align: center;
+}
+
 
 .refresh-button {
   position: fixed;

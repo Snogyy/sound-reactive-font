@@ -1,11 +1,9 @@
-import "../styles.css";
-
 const refrestInput = document.getElementById("refresh");
 let sensitivityInput = document.getElementById("sensibility");
-let currentMinDecibels = -58;
+let currentMinDecibels = -95;
 let analyser;
 
-const el = document.querySelector("#app h1");
+const el = document.querySelector("#app-text");
 
 var bins = 16;
 
@@ -65,13 +63,13 @@ function initVisualizer() {
       sensitivityInput.addEventListener("input", (e) => {
         const val = e.target.value;
 
-        currentMinDecibels = map(val, 0, 100, -40, -120);
+        currentMinDecibels = map(val, 0, 100, -70, -120);
         analyser.minDecibels = currentMinDecibels;
         localStorage.setItem("minDecibels", currentMinDecibels);
       });
 
       function setFontFeatures(avg) {
-        const els = el.childNodes;
+         const els = [el];
 
         avgHistory.push(avg);
         if (avgHistory.length > els.length) {
@@ -88,6 +86,7 @@ function initVisualizer() {
             100
           )}`;
         }
+        updateTextAreaRows();
       }
 
       function draw(now) {
@@ -119,7 +118,7 @@ function map(value, min1, max1, min2, max2) {
 
 
 refrestInput.addEventListener("click", () => {
-    currentMinDecibels = -58;
+    currentMinDecibels = -95;
     sensitivityInput.value = 50;
     if (analyser) {
         analyser.minDecibels = currentMinDecibels;
