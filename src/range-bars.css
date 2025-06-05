@@ -49,7 +49,7 @@
 #color::-ms-fill-lower,
 #color::-ms-fill-upper {
   height: 10rem;
-  background: url('assets/images/color-range-bar.svg') center/200% 100% no-repeat;
+  background: url('assets/images/color-range-bar2.png') center/200% 100% no-repeat;
   background-size: contain;
   border-radius: 0.6rem;
 }
